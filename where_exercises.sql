@@ -4,13 +4,15 @@
 								    OR first_name = 'Vidya'
 								    OR first_name = 'Maya'; */
 -- Now add a condition to find everybody with those names who is also male — 441 rows.
-SELECT * FROM employees WHERE gender = 'M'
-						AND (first_name = 'Irena'
+/*  SELECT * FROM employees WHERE gender = 'M'
+						 AND (first_name = 'Irena'
 						OR	first_name = 'Maya'
-						OR first_name = 'Vidya');
-					
-					
--- SELECT * FROM employees WHERE last_name LIKE 'E%'
+						OR first_name = 'Vidya'); */
+					 
+					 
+/* STARTS OR ENDS WITH E */					 				
+SELECT * FROM employees WHERE last_name LIKE 'E%'
+							OR last_name LIKE '%E';
 
 -- SELECT * FROM employees WHERE hire_date BETWEEN '1990-01-01'AND '1999-12-31';
 -- SELECT * FROM employees WHERE birth_date LIKE '%12-25';
