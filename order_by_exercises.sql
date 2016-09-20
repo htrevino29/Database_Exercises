@@ -4,7 +4,7 @@ WHERE gender = 'M'
 AND (first_name = 'Irena'
 OR	first_name = 'Maya'
 OR first_name = 'Vidya')
-ORDER BY first_name ASC, last_name ASC;
+ORDER BY last_name ASC, first_name ASC;
 					 					 
 /* STARTS and ENDS WITH E */					 				
 SELECT * FROM employees WHERE last_name LIKE 'E%'
